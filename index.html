@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CALCI</title>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-tr from-blue-700 to-green-500  flex items-center justify-center flex flec-col">
+        <div class="bg-gradient-to-tr from-red-500 to-green-500 border-2 border-black rounded-xl shadow-2xl ">
+            <h1 class=" text-center text-4xl font-bold p-2">CALCULATOR</h1>
+        
+        <div class="bg-gradient-to-tr from-red-500 to-green-500 border-2 border-black rounded-xl shadow-2xl ">
+            <form class="border-2 bg-gray-900 rounded-xl">
+                <input id="calculatorInput" type="text" class="bg-transparent p-8 rounded outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono">
+            </form>
+
+            <div class="p-6 text-white grid grid-cols-4 gap-4 border border-white rounded-xl">
+                <button onclick="clearInput()" class="font-mono col-span-3 bg-blue-700 hover:bg-blue-600 rounded-full p-4">C</button>
+                <button onclick="appendToInput('/')" class="font-mono bg-purple-700 hover:bg-purple-600 rounded-full p-4">&divide;</button>
+                <button onclick="appendToInput('1')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">1</button>
+                <button onclick="appendToInput('2')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">2</button>
+                <button onclick="appendToInput('3')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">3</button>
+                <button onclick="appendToInput('*')" class="font-mono bg-purple-700 hover:bg-purple-600 rounded-full p-4">&times;</button>
+                <button onclick="appendToInput('4')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">4</button>
+                <button onclick="appendToInput('5')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">5</button>
+                <button onclick="appendToInput('6')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">6</button>
+                <button onclick="appendToInput('-')" class="font-mono bg-purple-700 hover:bg-purple-600 rounded-full p-4">&minus;</button>
+                <button onclick="appendToInput('7')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">7</button>
+                <button onclick="appendToInput('8')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">8</button>
+                <button onclick="appendToInput('9')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">9</button>
+                <button onclick="appendToInput('+')" class="font-mono bg-purple-700 hover:bg-purple-600 rounded-full p-4">&plus;</button>
+                <button onclick="appendToInput('0')" class="font-mono bg-gray-700 hover:bg-gray-600 rounded-full p-4">0</button>
+                <button onclick="calculate()" class="font-mono col-span-3 bg-blue-700 hover:bg-blue-600 rounded-full p-4">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
